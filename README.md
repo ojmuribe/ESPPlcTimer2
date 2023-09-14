@@ -76,6 +76,6 @@ In fact, when declaring the instance, the created object is added to a list of t
 
 The update routine runs in a parallel task declared by the TIMERHANDLER macro
 
-EspPlcTimers2 uses the Arduino List library (https://www.luisllamas.es/libreria-arduino-list/) that must be added to the project (https://github.com/luisllamasbinaburo/Arduino-List). (Thanks Luis Llamas)
+EspPlcTimers2 uses the Luis Llamas Arduino List library (https://www.luisllamas.es/libreria-arduino-list/) that must be added to the project (https://github.com/luisllamasbinaburo/Arduino-List). (Thanks @luisllamasbinaburo)
 
 
