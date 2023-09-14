@@ -55,6 +55,18 @@ The reason for doing this is because the auxiliary functions do not require the 
 
 Therefore I have decided to keep them in a separate .h file so that you can use them on any type of Arduino and not just on an ESP32.
 
+Here there is only one timer object class:
+
+        espPlcTimer
+        
+When declaring an instance, you must specify the type of timer to be used: TON or TOFF
+
+Optionally, the timer time can be preloaded, although it can later be altered using the preset method.
+If no preload time is indicated, by default the timer takes a time of 10s
+
+    espPlcTimer t1(TON, 20000); //TON timer, 20s
+    espPlcTimer t2(TOFF); // TOFF timer, 10s
+
 The other main difference is the abstraction of the use of update functions.
 
 You do not need to add the declared timers to the update function, as is done in ESPPLCTimers.
@@ -64,6 +76,6 @@ In fact, when declaring the instance, the created object is added to a list of t
 
 The update routine runs in a parallel task declared by the TIMERHANDLER macro
 
-EspPlcTimers2 uses the Arduino List library (https://www.luisllamas.es/libreria-arduino-list/) that must be added to the project. (Thanks Luis Llamas)
+EspPlcTimers2 uses the Arduino List library (https://www.luisllamas.es/libreria-arduino-list/) that must be added to the project (https://github.com/luisllamasbinaburo/Arduino-List). (Thanks Luis Llamas)
 
 
