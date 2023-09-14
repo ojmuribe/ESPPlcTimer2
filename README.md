@@ -57,7 +57,7 @@ Therefore I have decided to keep them in a separate .h file so that you can use 
 
 Here there is only one timer object class:
 
-        espPlcTimer
+    espPlcTimer
         
 When declaring an instance, you must specify the type of timer to be used: TON or TOFF
 
