@@ -70,11 +70,11 @@ counter activation input.
 
     void tin(bool timerIn);
 
-Takes a boolean that is used to activate the counter.
+Takes a boolean that is used to activate the timer.
 
 ### Get method: 
 
     bool tin();
 
-returns a boolean that is the current state of the counter activation input.
+returns a boolean that is the current state of the timer activation input.
 
