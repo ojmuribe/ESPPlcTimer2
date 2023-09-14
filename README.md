@@ -56,6 +56,8 @@ The reason for doing this is because the auxiliary functions do not require the 
 
 Therefore I have decided to keep them in a separate .h file so that you can use them on any type of Arduino and not just on an ESP32.
 
+See my GitHub repo: 
+
 Here there is only one timer object class:
 
     espPlcTimer
