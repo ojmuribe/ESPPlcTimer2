@@ -1,3 +1,4 @@
+//V1.0 (c) 2023 Juan M. Uribe
 #pragma once
 #include "ListLib.h"
 
