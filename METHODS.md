@@ -42,7 +42,7 @@ The update method is used implicitly in the FREE RTOS update function. Therefore
 
     void preset(uint32_t time);
 
-Load the timer with a new preset time. time is specified in ms.
+Load the timer with a new "preset" time. "time" is specified in ms.
 
 ## q
 
@@ -60,9 +60,9 @@ The count is done backwards, from the preload value to zero.
 
 ## tin
 
-tin is the timer activation input.
+"tin" is the timer activation input.
 
-tin has a set method and a get method.
+"tin" has a set method and a get method.
 
 ### Set method: 
 
@@ -72,9 +72,9 @@ counter activation input.
 
 Takes a boolean that is used to activate the counter.
 
-### get method: 
+### Get method: 
 
     bool tin();
 
-returns a boolean that is the actual state of the counter activation input.
+returns a boolean that is the current state of the counter activation input.
 
