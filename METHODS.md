@@ -1,4 +1,4 @@
-### METHODS
+# METHODS
 
 EspPlcTimers2 is based on the EspPlcTimer class which is a derived class of the genericTimer class
 
