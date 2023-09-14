@@ -1,5 +1,6 @@
 # EspPlcTimers2
 ## An easier way to use ESPPLCTimers
+## V1.0 ©2023 Juan M. Uribe
 
 ---
 This is an improvement of the ESPPlcTimer library.
