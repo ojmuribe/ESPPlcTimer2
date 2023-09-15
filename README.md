@@ -3,7 +3,7 @@
 ## V1.0 ©2023 Juan M. Uribe
 
 ---
-This is an improvement of the ESPPlcTimer library.
+This is an improvement of the [ESPPlcTimer](https://github.com/ojmuribe/ESPPlcTimer) library.
 
 ---
 ### USAGE
