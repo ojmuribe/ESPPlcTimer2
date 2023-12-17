@@ -39,38 +39,36 @@ genericTimer::genericTimer(timerType type, uint32_t preset) {
   t.pt = preset;
 }
 
-void genericTimer::updateTimer() {
-  switch (t.type) {
-    case TON: {
-        if (!t.in)
-        {
-          t.q = false;
-          t.et = t.pt;
-        }
-        t.q = (t.in && (t.et == 0));
-        if (millis() >= lastTime)
-        {
-          lastTime = millis();
-        }
-        if (t.in && t.et > 0)
-          t.et--;
-      }
-      break;
-    case TOFF: {
-        t.q = (!t.in && (t.et > 0));
-        if (millis() >= lastTime)
-        {
-          lastTime = millis();
-        }
-        if (!t.in && t.et > 0)
-          t.et--;
-        if (t.in)
-        {
-          t.q = true;
-          t.et = t.pt;
-        }
-      }
-      break;
+void genericTimer::updateTimer()
+{
+  switch (t.type)
+  {
+  case TON:
+  {
+    if (!t.in)
+    {
+      t.q = false;
+      t.et = t.pt;
+    }
+    t.q = (t.in && (t.et <= 0));
+    if (t.in && t.et > 0)
+      t.et -= millis() - lastTime;
+    lastTime = millis();
+  }
+  break;
+  case TOFF:
+  {
+    t.q = (!t.in && (t.et > 0));
+    if (!t.in && t.et > 0)
+      t.et -= millis() - lastTime;
+    if (t.in)
+    {
+      t.q = true;
+      t.et = t.pt;
+    }
+    lastTime = millis();
+  }
+  break;
   }
 }
 
