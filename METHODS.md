@@ -44,6 +44,12 @@ The update method is used implicitly in the FREE RTOS update function. Therefore
 
 Load the timer with a new "preset" time. "time" is specified in ms.
 
+## reset
+
+    void reset();
+
+Force to count from de beginnig.
+
 ## q
 
     bool q();
