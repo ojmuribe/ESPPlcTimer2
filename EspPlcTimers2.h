@@ -27,6 +27,7 @@ class genericTimer {
     uint32_t et();
     void tin(bool timerIn);
     bool tin();
+    void reset();
 };
 
 genericTimer::genericTimer(timerType type) {
@@ -70,6 +71,10 @@ void genericTimer::updateTimer()
   }
   break;
   }
+}
+
+void genericTimer::reset(void){
+  t.et = t.pt;
 }
 
 void genericTimer::preset(uint32_t time) {
