@@ -48,7 +48,7 @@ Load the timer with a new "preset" time. "time" is specified in ms.
 
     void reset();
 
-Force to count from de beginnig.
+Force to count from the beginnig.
 
 ## q
 
