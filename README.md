@@ -70,7 +70,7 @@ If no preload time is indicated, by default the timer takes a time of 10s
     espPlcTimer t1(TON, 20000); //TON timer, 20s
     espPlcTimer t2(TOFF); // TOFF timer, 10s
 
-The other main difference is the abstraction of the use of update functions.
+The other main difference is the abstraction of using update functions.
 
 You do not need to add the declared timers to the update function, as is done in ESPPLCTimers.
 This is done automatically and implicitly when an instance of an espPlcTimer object is declared.
